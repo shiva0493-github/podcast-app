@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Podcast Technical Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### ESPAÑOL
+Realizar un podcast SPA basado en la información facilitada en el documento de requisitos técnicos.
+
+## Objetivos
+Tres puntos de vista principales
+1. Página de inicio
+    - Mostrar la lista de 100 podcasts ... **HECHO**
+    - Una vez obtenida, la lista debe almacenarse en el lado del cliente y sólo debe llamarse de nuevo una vez transcurrido un día ... **HECHO**
+    - Filtro en directo/inmediato para los podcasts basado en el nombre del podcast y del autor ... **HECHO**
+    - Cada podcast está vinculado a su vista detallada ... **HECHO**
+2. Vista detallada del podcast
+    - Barra lateral con imagen del Podcast, título, autor y descripción ... **HECHO**
+    - En el lado derecho, Recuento de Episodios y la lista de Episodios con su título, fecha de publicación y duración ... **HECHO**
+    - Almacenar la información de cada podcast en el lado del cliente cuando se llama por primera vez. **HECHO**
+    - Debe ser llamado de nuevo sólo después de un día ha pasado ... **HECHO**
+    - La barra lateral con la información de los podcasts debería estar vinculada a la vista detallada de los podcasts. ... **HECHO**
+3. Vista detallada del episodio
+    - La misma barra lateral de la información del podcast de la página de detalles del podcast ... **HECHO**
+    - La imagen, el título y el autor deben estar vinculados para ir a la vista detallada del podcast. ... **HECHO**
+    - La sección Episodio debería tener título, descripción y un reproductor de audio HTML5 básico para escuchar el podcast. ... **HECHO**
+
+Cabecera
+- El título 'Podcaster' debería estar enlazado para ir a la página de inicio. ... **HECHO**
+- Cada vez que hay una navegación desde el lado del cliente, algún signo visual debe estar allí para actuar como un cargador mientras se carga la información. ... **HECHO**
+
+General
+- CORS ... He probado el método de axios baseurl pero no parece funcionar. Tendré que comprobar cómo puedo integrarlo. ...**HECHO**
+
+
+## Paquetes externos necesarios para instalar
+1. npm install styled-components
+2. npm install axios
+3. npm install react-router-dom
+
+En el directorio del proyecto, puedes ejecutar:
+
+## Detalles adicionales de UI/UX
+- Ver más botón en la página de inicio para mostrar podcasts en grupos de 10.
+- El número de podcasts junto a la barra de búsqueda se actualiza a partir de la consulta del filtro.
+- El cargador es un disco de vinilo.
+- En la página de inicio, los podcasts tienen un color de sombra al pasar el ratón por encima.
+- Efecto hover en la lista de episodios.
+
+
+### ENGLISH
+To make a podcast SPA based on the information provided in the technical requirements document.
+
+## Objectives
+Three main views
+1. Homepage
+    - Show the list of 100 podcasts ... **DONE**
+    - Once obtained, the list should be stored on the client side and only called again after one day has passed ... **DONE**
+    - Live/Immediate Filter for the podcasts based on the Podcast and Author Name ... **DONE**
+    - Each Podcast is linked to its detail view ... **DONE**
+2. Podcast Detail View
+    - Side Bar with Podcast Image, title, author and description ... **DONE**
+    - On the right side, Episode Count and the list of Episodes with their title, published date and duration ... **DONE**
+    - Store the information of each podcast on the client side when it is called for the first time. **DONE**
+    - It should be called again only after a day has passed ... **DONE**
+    - Side Bar with Podcast Information should be linked to the podcast detail view. ... **DONE**
+3. Episode Detail View
+    - The same side bar of the podcast information from the podcast detail page ... **DONE**
+    - The image, title and author should be linked to go to the podcast detail view. ... **DONE**
+    - The Episode section should have title, description and a basic HTML5 audio player to listen to the podcast. ... **DONE**
+
+Header
+- The Title 'Podcaster' should be linked to go to the home page. ... **DONE**
+- Every time there is a navigation from the client side, some visual sign should be there to act as a loader while the information is being loaded. ... **DONE**
+
+General
+- CORS ... I tried the method of axios baseurl but it didn't seem to work. I will have to check to see how I can integrate it...**DONE**
+
+
+## External packages needed to install
+1. npm install react-router-dom
+2. npm install styled-components
+3. npm install axios
+4. npm install acios-mock-adapter
+5. npm install jest
+
+
 
 In the project directory, you can run:
 
-### `npm start`
+## Additional UI/UX details
+- See more button on the homepage to show podcasts in groups of 10.
+- The number of podcasts next to the search bar are getting updated from the filter query.
+- The loader is a vinyl disc.
+- On the homepage, the podcast have a hover shadow colour.
+- Hover effect on episode list.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
